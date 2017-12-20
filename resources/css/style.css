@@ -16,7 +16,18 @@ html {
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 960px;
+  border: 1px solid red;
+}
+
+/* set defauly column flex container style */
+
+.ccontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
 }
 
 /* header */
@@ -43,4 +54,39 @@ header img {
 
 header span {
   padding: 0.66rem 0;
+}
+
+/* main container */
+
+/* banner */
+
+.banner {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.banner span {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.banner h1 {
+  font-size: 2rem;
+}
+
+.banner.background {
+  height: 25rem;
+  background-image: url("../img/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .ccontainer {
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 0 2rem 3rem;
+  background-color: black;
+  border: 1px solid red;
 }
