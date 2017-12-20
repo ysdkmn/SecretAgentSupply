@@ -1,0 +1,46 @@
+/* general */
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+/* set the site container to 960px with 100% background */
+
+.background {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+/* header */
+
+header {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+}
+
+header .background {
+  background-color: black;
+}
+
+header .container {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  padding: 0 1rem 0 0.5rem;
+}
+
+header span {
+  padding: 0.66rem 0;
+}
