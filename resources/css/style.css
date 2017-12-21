@@ -99,6 +99,10 @@ nav {
   background-color: firebrick;
 }
 
+nav.menu {
+  display: none;
+}
+
 /* product thumbs */
 
 .products .container {
@@ -135,8 +139,8 @@ nav {
   padding-bottom: 4rem;
 }
 
-.info .ccontainer{
-width: 35%;
+.info .ccontainer {
+  width: 35%;
 }
 
 .info .info-title {
@@ -153,7 +157,27 @@ footer .background {
   height: 5rem;
 }
 
-footer .container{
+footer .container {
   color: white;
   align-items: center;
+}
+
+/* tablet mode (width: 1024px)*/
+
+@media only screen and (max-width: 1024px) {
+  nav.list {
+    display: none;
+  }
+  nav.menu {
+    display: flex;
+    justify-content: center;
+  }
+  .products .container {
+    flex-wrap: wrap;
+    padding: 2rem 0;
+  }
+  .products .ccontainer {
+    width: 47%;
+    margin: 1rem 0;
+  }
 }
